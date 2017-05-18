@@ -47,8 +47,68 @@
 		</div>
 	</header>
 	<section>
+        <?php 
+        try{
+            $bdd=new PDO("mysql:host=localhost;dbname=treizenvie; charset=utf8","root","");
+        }
+            catch(PDOException $e){
+                die('Erreur : ' . $e->getMessage());
+            }
+        
+        $bdd ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+                /* Ajout en bdd du user " Partie 2 du form " */
+        if(
+            !empty($_POST['lastName']) && !empty($_POST['firstName']) && !empty($_POST['departements']) && !empty($_POST['society']) && 
+            !empty($_POST['email']) && 
+            !empty($_POST['phone'])){
+
+            $firstName=htmlspecialchars($_POST['firstName']);
+            $lastName=htmlspecialchars($_POST['lastName']);
+            $departements=htmlspecialchars($_POST['departements']);
+            $society=htmlspecialchars($_POST['society']);
+            $email=htmlspecialchars($_POST['email']);
+            $phone=htmlspecialchars($_POST['phone']);
+            $contactMail=htmlspecialchars($_POST['checkBoxMail']);
+            $contactPhone=htmlspecialchars($_POST['checkBoxPhone']);
+
+              $user = $bdd->prepare("INSERT INTO user(name, last_name, departement_id, company, email, phone, contact_mail, contact_phone) VALUES (?, ?, ?, ?, ?, ?, ?, ?) ");
+            
+            $user->bindParam('1', $firstName);
+            $user->bindParam('2', $lastName);
+            $user->bindParam('3', $departements);
+            $user->bindParam('4', $society);
+            $user->bindParam('5', $email);
+            $user->bindParam('6', $phone);
+            $user->bindParam('7', $contactMail);
+            $user->bindParam('8', $contactPhone);
+            $user->execute();
+            
+     }
+        /* Ajout en bdd de l'article, sa catégorie et recup de l'id user au dessus  partie 3 & 4 */
+            $userIDbdd = $bdd->prepare("SELECT user_id FROM user WHERE phone=?");
+            $userIDbdd->bindParam('1', $phone);
+            $userIDbdd->execute();
+            $userId = $userIDbdd->fetch(); // On recup dans le TABLEAU $userID l'id créé précédement
+            $categoryId=htmlspecialchars($_POST['categoryForm']);
+            $required1=htmlspecialchars($_POST['requisOne']);
+            $required2=htmlspecialchars($_POST['requisTwo']);
+            $articleTitle=htmlspecialchars($_POST['titreArticle']);
+            $articleTxt=htmlspecialchars($_POST['contenuArticle']);
+            
+        
+            $article = $bdd->prepare("INSERT INTO article(required_1, required_2, article_title, article_txt, user_id, category_id) VALUES (?, ?, ?, ?, ?, ?) ");
+            $article->bindParam('1', $required1);
+            $article->bindParam('2', $required2);
+            $article->bindParam('3', $articleTitle);
+            $article->bindParam('4', $articleTxt);
+            $article->bindParam('5', $userId['0']);
+            $article->bindParam('6', $categoryId);
+            $article->execute();
+            
+    ?>
 		<div id="fin_article_div">
 			<div id="fin_article_title">
+                
 				<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32" id="Слой_1" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Check_Circle"><path d="M16,0C7.163,0,0,7.163,0,16c0,8.837,7.163,16,16,16c8.836,0,16-7.164,16-16C32,7.163,24.836,0,16,0z M16,30   C8.268,30,2,23.732,2,16C2,8.268,8.268,2,16,2s14,6.268,14,14C30,23.732,23.732,30,16,30z" fill="#121313"/><path d="M23.3,10.393L13.012,20.589l-4.281-4.196c-0.394-0.391-1.034-0.391-1.428,0   c-0.395,0.391-0.395,1.024,0,1.414l4.999,4.899c0.41,0.361,1.023,0.401,1.428,0l10.999-10.899c0.394-0.39,0.394-1.024,0-1.414   C24.334,10.003,23.695,10.003,23.3,10.393z" fill="#121313"/></g><g/><g/><g/><g/><g/><g/></svg>
 				<p>Votre article à bien été envoyé</p>
 			</div>
