@@ -38,6 +38,10 @@ section {
 	width: 94%;
 }
 
+#categoryFormInputs div {
+	display: flex;
+}
+
 /*FIN FORMULAIRE*/
 
 /*TITRE*/
