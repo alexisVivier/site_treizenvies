@@ -1,0 +1,476 @@
+/* home page */
+
+
+/* NATHAN HERVOUET */
+
+
+/* home_start */
+
+@import 'https://fonts.googleapis.com/css?family=Roboto:100';
+* {}
+
+html * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+html *:before,
+html *:after {
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#div_search_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #37b9af;
+    height: 50px;
+}
+
+form.hide-submit input[type="submit"] {
+    display: none;
+}
+
+
+.hide-submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18%;
+}
+
+input[type="search"] {
+    border: none;
+    background-color: white;
+    font-size: 14px;
+    color: black;
+    height: 30px;
+    padding-left: 20px;
+    margin-right: 10px;
+    width: 320px;
+}
+
+input[type="search"]:focus {
+    outline: none;
+    border: 1px solid #37b9af;
+}
+
+#div_search_bar svg {
+    height: 22px;
+    width: 22px;
+    transition: all 0.7s;
+    transform-origin: 50% 50%;
+}
+
+#div_search_bar svg:hover {
+    transform: scale(1.25);
+}
+
+/* ------------------------------------------------------------------------*/
+
+
+
+#nav_page_container {
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------*/
+
+#nav_filtre_div {
+    width: 380px;
+    margin-left: 8%;
+    padding-top: 2%;
+    height: 1000px;
+}
+
+
+/* ------------------------------------------------------------------------*/
+
+#nav_div_title_cat {
+    background-color: #e69138;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 320px;
+    height: 45px;
+}
+
+#nav_div_title_cat p {
+    color: white;
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+
+#nav_div_title_cat svg {
+    width: 22px;
+    height: 22px;
+    fill: white;
+    stroke: white;
+    margin-left: 40px;
+}
+
+/* ------------------------------------------------------------------------*/
+
+.choix_categorie {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    width: 320px;
+    padding-left: 22px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.nav_radio_button {
+    display: flex;
+    flex-direction: row;
+    padding-top: 14px;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.choix_categorie label:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    border: 2px solid dimgrey;
+    display: inline-block;
+    left: 0;
+    bottom: 1px;
+    margin-right: 6px;
+}
+
+.rchoix_categorie label:before {
+    border-radius: 8px;
+}
+
+
+input[type=radio]:checked + label:before {
+    background-color: dimgrey;
+}
+
+
+/* ------------------------------------------------------------------------*/
+
+
+#nav_div_delete_filter {
+    background-color: #666666;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 320px;
+    height: 45px;
+    transition-duration: 0.7s;
+}
+
+#nav_div_delete_filter p {
+    color: white;   
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+#nav_div_delete_filter svg {
+    width: 22px;
+    height: 22px;
+    fill: white;
+    stroke: white;
+    margin-left: 40px;
+}
+
+#nav_div_delete_filter:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------*/
+
+
+
+#nav_div_title_dep {
+    background-color: #e69138;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 320px;
+    height: 45px;
+}
+
+#nav_div_title_dep p {
+    color: white;   
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+#nav_div_title_dep svg {
+    width: 22px;
+    height: 22px;
+    fill: white;
+    stroke: white;
+    margin-left: 40px;
+}
+
+/* ------------------------------------------------------------------------*/
+
+#nav_dep_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 320px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
+
+/* ------------------------------------------------------------------------*/
+
+
+#nav_article_container {
+    width: 40%;
+    padding-top: 2%;
+}   
+
+
+/* ------------------------------------------------------------------------*/
+
+
+#nav_div_recent {
+    background-color: #666666;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+}
+
+#nav_div_recent p {
+    color: white;   
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+#nav_div_recent svg {
+    width: 22px;
+    height: 22px;
+    fill: white;
+    stroke: white;
+    margin-left: 40px;
+}
+
+
+
+/* ------------------------------------------------------------------------*/
+
+.nav_div_article {
+    display: flex;
+    flex-direction: row;
+    width: 610px; /* 100% ---------------*/ 
+    margin-top: 2%;
+}
+
+
+/* ------------------------------------------------------------------------*/
+
+.div_article_left_part {
+    background-color: #93bee5;
+    width: 15%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+}
+
+.div_article_left_part svg {
+    margin-top: 30%;
+    width: 28px;
+    height: 28px;
+    fill: white;
+    stroke: white; 
+}
+/* ------------------------------------------------------------------------*/
+
+.div_article_right_part {
+    width: 85%;
+    height: 170px;
+    background-color: white;
+}
+
+.div_article_title_autor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 30%;
+    padding: 0 3% 1% 4%;
+}
+
+
+.title_article {
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+}
+
+.autor_article {
+    font-size: 14px;
+    color: #666666;
+}
+
+.div_article_categorie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    padding: 0 3% 0 4%;
+}
+
+#div_article_categorie p {
+    font-size: 14px;
+    color: black;
+}
+
+.div_article_text_plus {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 55%;
+}
+
+.text_article {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    font-size: 12px;
+    padding: 0 0 2% 4%;
+}
+
+.div_button_article {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 4%;
+    width: 30%;
+}
+
+
+.button_article_plus {
+    display: flex;
+    align-items: center;
+    background-color: #6fa8dc;
+    color: white;
+    font-size: 14px;
+    padding: 6px 15px 6px 15px;
+    border-radius: 12px;
+    transition-duration: 0.7s;
+}
+
+    
+.button_article_plus svg {
+    margin-left: 6px;
+    width: 18px;
+    height: 18px;
+}
+
+.button_article_plus path {
+    fill: white;
+    stroke: white; 
+}
+
+
+.button_article_plus:hover {
+    background-color: #666666;
+}
+
+/* ------------------------------------------------------------------------*/
+
+.div_video_left_part {
+    background-color: #e88c8c;
+    width: 15%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+}
+
+.div_video_left_part svg {
+    margin-top: 30%;
+    width: 28px;
+    height: 28px;
+    fill: white;
+    stroke: white; 
+}
+
+.button_video_plus {
+    display: flex;
+    align-items: center;
+    background-color: #e06666;
+    color: white;
+    font-size: 14px;
+    padding: 6px 15px 6px 15px;
+    border-radius: 12px;
+    transition-duration: 0.7s;
+}
+
+    
+.button_video_plus svg {
+    margin-left: 6px;
+    width: 18px;
+    height: 18px;
+}
+
+.button_video_plus path {
+    fill: white;
+    stroke: white; 
+}
+
+
+.button_video_plus:hover {
+    background-color: #666666;
+}
+
+/* ------------------------------------------------------------------------*/
+
+
+
+/* ------------------------------------------------------------------------*/
+
+
+/* home_stop */
+
+
+/* NATHAN HERVOUET */

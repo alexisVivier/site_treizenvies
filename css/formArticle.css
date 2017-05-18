@@ -1,0 +1,185 @@
+/*
+section {
+	background-image: url(../images/home.jpeg);
+	margin: 5% 0 5% 0;
+}
+*/
+
+#formArticle {
+	width: 90vw;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	background-image: url(../images/home.jpeg);
+	padding: 2% 5% 2% 5%;
+}
+
+/*FORMULAIRE DE CONTACT*/
+
+#contactForm {
+	width: 25%;
+	background-color: white;
+}
+
+#contactForm input[type=text], input[type=number] {
+	border: none;
+	border-bottom: solid grey 2px;
+}
+
+#contactForm select {
+	border: none;
+	border-bottom: solid grey 2px;
+	width: 73%
+}
+
+#contactForm input[type=email] {
+	border: none;
+	border-bottom: solid grey 2px;
+	width: 94%;
+}
+
+/*FIN FORMULAIRE*/
+
+/*TITRE*/
+
+#contactFormTitle {
+	display: flex;
+/*	justify-content: center;*/
+	align-items: center;
+	color: white;
+	background-color: #37b9af;
+	padding-left: 2vw;
+}
+
+#contactFormTitle svg {
+	width: 38px;
+	margin-right: 0.5vw;
+	padding: 1vh 0;
+}
+
+#contactFormTitle svg path {
+	fill: white;
+}
+
+/*FIN TITRE*/
+
+/*DEBUT FORMULAIRE DETAILS*/
+
+#contactFormNames {
+	display: flex;
+	justify-content: space-around;
+	padding: 3vh 1vw;
+}
+
+#contactFormDepartementSociety {
+	display: flex;
+	justify-content: space-around;
+	padding: 3vh 1vw;
+}
+
+#contactFormDepartementSociety select {
+	width: 
+}
+
+#contactFormDepartement {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 1vw;
+}
+
+#contactFormEmail {
+	margin-left: 1.5vw;
+	padding: 3vh 1vw;
+}
+
+#contactFormPhoneNumber {
+	margin-left: 1.5vw;
+	padding: 3vh 1vw;
+}
+
+#contactFormPhoneNumber input {
+	width: 100%;
+}
+
+#contactFormRecontacter {
+	display: flex;
+	justify-content: space-around;
+	padding: 3vh 0.5vw;
+}
+
+#contactFormRecontacter div {
+	
+}
+
+#contactFormRecontacter div label {
+	
+}
+
+/*FIN CONTACT FORMULAIRE DETAILS*/
+
+/*DEBUT CHOIX CATEGORIE FORM*/
+
+/*DIV TOTALE CHOIX CATEGORIE*/
+
+#categoryForm {
+	width: 20%;
+	background-color: white;
+}
+
+/*TITRE*/
+
+#categoryFormTitle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background-color: #37b9af;
+}
+
+#categoryFormTitle svg {
+	width: 38px;
+	margin-right: 0.5vw;
+	padding: 1vh 0;
+}
+
+#categoryFormTitle svg path {
+	fill: white;
+}
+
+/*FIN TITRE*/
+
+/*FIN CHOIX CATEGORIE FORM*/
+
+/*ARTICLE FORM DEBUT*/
+
+/*ARTICLE TITLE DEBUT*/
+
+#articleFormTitle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background-color: #37b9af;
+}
+
+#articleFormTitle svg {
+	width: 38px;
+	margin-right: 0.5vw;
+	padding: 1vh 0;
+}
+
+#articleFormTitle svg path {
+	fill: white;
+}
+
+/*ARTICLE TITLE FIN*/
+
+/*ARTICLE DIV*/
+
+#articleForm {
+	width: 50%;
+	background-color: white;
+}
+
+/*ARTICLE FORM FIN*/

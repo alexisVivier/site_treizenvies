@@ -1,0 +1,101 @@
+Body {
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	background-color: transparent;
+	color: #12acf0;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+section {
+	background-image: url(../images/home.jpeg);
+}
+
+#fin_article_div {
+	width: 30vw;
+	margin: auto;
+	padding: 11% 0 11% 0;
+}
+
+#fin_article_title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1vh 0;
+	color: white;
+	background-color: #37b9af;
+}
+
+#fin_article_title svg {
+	width: 38px;
+	margin-right: 0.5vw;
+	padding: 1vh 0;
+}
+
+#fin_article_title path {
+	stroke: white;
+	fill: white;
+}
+
+#fin_article_title p {
+	font-size: 24px;
+}
+
+#fin_article_container {
+	background-color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+#fin_article_container_title {
+	padding: 4vh;
+	font-size: 20px;
+}
+
+#fin_article_button_container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0.5vh 0 2vh 0;
+}
+
+#fin_article_button_container a {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 45%;
+	padding: 2vh 0;
+	border-radius: 15px;
+}
+
+#fin_article_button_container a svg {
+	width: 20px;
+	margin: 0 0.5vw 0 0.5vw;
+}
+
+#fin_article_button_container a svg path {
+	stroke: white;
+	fill: white;
+}
+
+#fin_article_button_container a:first-child {
+	background-color: #e69138;
+	color: white;
+}
+
+#fin_article_button_container a:last-child {
+	padding-left: 4px;
+	background-color: #6fa8dc ;
+	color: white;
+}

@@ -1,0 +1,310 @@
+/* Importation de polices */
+@import 'https://fonts.googleapis.com/css?family=Roboto:100';
+
+/* Gérer les marges des div */
+*{box-sizing: border-box; font-family: 'Roboto', sans-serif;}
+
+/* Aucune marge sur les côtés */
+body{margin: 0;}
+
+/* Liens non soulignés et non colorés */
+a {background-color: transparent; color: #000000; text-decoration: none;}
+a:hover,a:active {outline: 0;}
+
+/*-------------------------*/
+/*       HEADER            */
+/*-------------------------*/
+
+#header {
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+}
+
+.right_icon_space {
+    width: 20%;
+    min-width: 10px;
+}
+
+#top_navbar a{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.hvr_bouton {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    cursor: pointer;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+.hvr_bouton:hover {
+    box-shadow: inset 0 160px 0 0 #e69138;
+    color: #FFF;
+    
+}
+
+/*-------------------------*/
+/*    FIN HEADER           */
+/*-------------------------*/
+
+/*-------------------------*/
+/*       FOOTER            */
+/*-------------------------*/
+
+#footer_bar {
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.line_space {
+    width: 1px;
+    height: 22px;
+    background-color: black;
+}
+
+#footer_bar a{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.ftr_bouton {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    cursor: pointer;
+}
+.ftr_bouton:hover {
+    text-decoration: underline;
+}
+
+/*-------------------------*/
+/*   FIN FOOTER            */
+/*-------------------------*/
+
+
+
+/*-------------------------*/
+/*                         */
+/* PAGE ARTICLE AVEC IMAGE */
+/*                         */
+/*-------------------------*/
+
+
+
+/*-------------------------*/
+/*   BANDEAU BLEU          */
+/*-------------------------*/
+
+/* Bandeau bleu avec titre de l'article et catégorie */
+#articleImageTitle{
+    display: flex;
+    justify-content: space-between;
+    background-color: #6fa8dc;
+    padding: 0px 130px 0px 250px;
+    color: white;
+    align-items: center;
+}
+
+/* Partie gauche du bandeau bleu : titre de l'article */
+#articleImageTitleLeft{
+    font-size: 3vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Partie gauche du bandeau bleu : catégorie de l'article */
+#articleImageTitleRight{
+    font-size: 2vh;
+    margin-right: 80px;
+}
+
+/*-------------------------*/
+/*   FIN BANDEAU BLEU      */
+/*-------------------------*/
+
+
+
+/*-------------------------*/
+/* FLEXBOX PRINCIPALE      */
+/*-------------------------*/
+
+#articleImageContainerTotal{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #eeeeee;
+}
+
+/*-------------------------*/
+/* FIN FLEXBOX PRINCIPALE  */
+/*-------------------------*/
+
+
+/*-------------------------*/
+/* FLEXBOX PARTIE GAUCHE   */
+/*-------------------------*/
+
+/* Conteneur gauche comprenant image, prérequis + contenu */
+#articleImageContainerLeft{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 20px 15%;
+    max-width: 600px;
+}
+
+/* Image de l'article */
+#articleImageContainerLeftImage img{
+    max-width: 600px;
+}
+
+/* Prérequis de la page article */
+#articleImageContainerLeftPrerequisites{
+    background-color: #6fa8dc; 
+    padding: 10px 10px 10px 20px;
+	max-width: 600px;
+    font-size: 2.1vh;
+    color: white;
+    margin-top: 5px;
+}
+
+/* Contenu de la page article */
+#ArticleImageContainerLeftContent{
+    background-color: #ffffff; 
+    padding: 20px 20px 20px 20px;
+	max-width: 600px;
+    font-size: 2.1vh;
+    color: black;
+    margin-top: 10px;
+}
+
+/* Partie affichant la société et le nom de l'auteur */
+#articleImageContainerLeftBottom{
+    font-size: 1.6vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    margin: 40px 20px 5px 10px;
+}
+
+/* Partie qui affiche le nom de l'entreprise et le svg immeuble */
+#articleImageContainerLeftBottomLeft{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    width: 200px;
+    height: 50px;
+	background-color: #e69138;
+    margin-left: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+}
+
+/* SVG à gauche du nom de la société */
+#articleImageContainerLeftBottomLeft svg{
+    height: 3vh;
+    fill: white;
+}
+
+#articleImageContainerLeftBottomRight{
+    width: 200px;
+}
+    
+/*-------------------------*/
+/* FIN FLEXBOX PART GAUCHE */
+/*-------------------------*/
+
+
+
+/*-------------------------*/
+/*  FLEXBOX PARTIE DROITE  */
+/*-------------------------*/
+
+/* Conteneur droit total */
+#articleImageContainerRightTotal{
+    display: flex;
+	flex-direction: column;
+    align-items: center; 
+    margin: 20px 20px 20px 20px;
+}
+
+/* Conteneur droit supérieur */
+#articleImageContainerRight{
+    display: flex;
+	flex-direction: column;
+    background-color: white;
+    text-align: left;
+}
+
+/* Les svg de la partie droite supérieur */
+#articleImageContainerRight svg{
+    height: 3vh;
+}
+
+/* Partie "contacter l'auteur" */
+#articleImageContainerRightOne{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    background-color: #37b9af;
+	color: white;
+    width: 100%
+}
+
+/* Partie contenant le svg de "contacter l'auteur" */
+#articleImageContainerRightOne svg{
+	height: 3vh;
+	margin-right: 10px;
+    fill: white;
+}
+
+/* Partie comprenant les infos contact */
+#articleImageContainerRightTwo, #articleImageContainerRightThree, #articleImageContainerRightFour, #articleImageContainerRightFive{
+    display: flex;
+	align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Les svg des infos contact */
+#articleImageContainerRightThree svg, #articleImageContainerRightFour svg, #articleImageContainerRightFive svg{
+    margin-right: 10px;
+}
+
+/* Conteneur "imprimer l'article */
+#articleImageContainerRightSix{
+    display: flex;
+	justify-content: center;
+	align-items: center;  
+    background-color: #37b9af;
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Lien de "imprimer l'article" */
+#articleImageContainerRightSix a{
+    color: white;
+}
+
+/* svg de "imprimer l'article" */
+#articleImageContainerRightSix svg{
+    margin-right: 10px;
+    height: 3vh;
+}
+
+/*-------------------------*/
+/* FIN FLEXBOX PART DROITE */
+/*-------------------------*/

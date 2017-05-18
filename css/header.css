@@ -1,0 +1,77 @@
+/* home page */
+
+
+/* NATHAN HERVOUET */
+    
+/* home_start */
+@import 'https://fonts.googleapis.com/css?family=Roboto:100';
+}
+
+* {
+    
+}
+
+html
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+html *:before,
+html *:after {
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+*:before,
+*:after {
+    z-index: -1;
+}
+
+#header {
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.right_icon_space {
+    width: 20%;
+    min-width: 10px;
+}
+
+#top_navbar a{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.hvr_bouton {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+.hvr_bouton:hover {
+    box-shadow: inset 0 160px 0 0 #e69138;
+    color: #FFF;
+    
+}
+
+
+
+
+/* home_stop */
+
+
+/* NATHAN HERVOUET */

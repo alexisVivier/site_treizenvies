@@ -1,0 +1,109 @@
+/* home page */
+
+
+/* NATHAN HERVOUET */
+    
+/* home_start */
+@import 'https://fonts.googleapis.com/css?family=Roboto:100';
+
+
+* {
+    
+}
+
+html
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+html *:before,
+html *:after {
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+*:before,
+*:after {
+    z-index: -1;
+}
+
+#background_image {
+    width: 100%;
+    height: 740px;
+    background-image: url('../image/home.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#home_container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#logo_center {
+    position: absolute;
+    min-width: 100px;
+    width: 700px;
+	height: auto;
+}
+
+
+#home_container_button {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 28%;
+}
+
+#home_button_left{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #e69138;
+    padding: 20px;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+#home_button_right {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #37b9af;
+    padding: 20px;
+    border-radius: 15px;
+    margin-left: 15px;
+}
+
+
+#home_button_right:hover {
+    background-color: #31A299;
+    color: white;
+}
+
+#home_button_left:hover {
+    background-color: #BB762E;
+    color: white;
+}
+
+#home_button_right, #home_button_left{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    transition-property: color, background-color;
+}
+/* home_stop */
+
+
+/* NATHAN HERVOUET */
