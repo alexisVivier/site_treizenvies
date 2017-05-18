@@ -60,7 +60,8 @@
         if(
             !empty($_POST['lastName']) && !empty($_POST['firstName']) && !empty($_POST['departements']) && !empty($_POST['society']) && 
             !empty($_POST['email']) && 
-            !empty($_POST['phone'])){
+            !empty($_POST['phone']) && 
+            !empty($_POST['checkBoxMail']) &&
 
             $firstName=htmlspecialchars($_POST['firstName']);
             $lastName=htmlspecialchars($_POST['lastName']);
@@ -70,7 +71,6 @@
             $phone=htmlspecialchars($_POST['phone']);
             $contactMail=htmlspecialchars($_POST['checkBoxMail']);
             $contactPhone=htmlspecialchars($_POST['checkBoxPhone']);
-
               $user = $bdd->prepare("INSERT INTO user(name, last_name, departement_id, company, email, phone, contact_mail, contact_phone) VALUES (?, ?, ?, ?, ?, ?, ?, ?) ");
             
             $user->bindParam('1', $firstName);
@@ -83,7 +83,84 @@
             $user->bindParam('8', $contactPhone);
             $user->execute();
             
-     }
+            
+            
+     } elseif( 
+            !empty($_POST['lastName']) && !empty($_POST['firstName']) && !empty($_POST['departements']) && !empty($_POST['society']) && 
+            !empty($_POST['email']) && 
+            !empty($_POST['phone']) && 
+            !empty($_POST['checkBoxMail']) &&
+             empty($_POST['checkBoxPhone'])){
+            
+            $firstName=htmlspecialchars($_POST['firstName']);
+            $lastName=htmlspecialchars($_POST['lastName']);
+            $departements=htmlspecialchars($_POST['departements']);
+            $society=htmlspecialchars($_POST['society']);
+            $email=htmlspecialchars($_POST['email']);
+            $phone=htmlspecialchars($_POST['phone']);
+            $contactMail=htmlspecialchars($_POST['checkBoxMail']);
+            $contactPhone=0;
+              $user = $bdd->prepare("INSERT INTO user(name, last_name, departement_id, company, email, phone, contact_mail, contact_phone) VALUES (?, ?, ?, ?, ?, ?, ?, ?) ");
+            
+            $user->bindParam('1', $firstName);
+            $user->bindParam('2', $lastName);
+            $user->bindParam('3', $departements);
+            $user->bindParam('4', $society);
+            $user->bindParam('5', $email);
+            $user->bindParam('6', $phone);
+            $user->bindParam('7', $contactMail);
+            $user->bindParam('8', $contactPhone);
+            $user->execute();
+            } elseif( 
+            !empty($_POST['lastName']) && !empty($_POST['firstName']) && !empty($_POST['departements']) && !empty($_POST['society']) && 
+            !empty($_POST['email']) && 
+            !empty($_POST['phone']) && 
+             empty($_POST['checkBoxMail']) &&
+            !empty($_POST['checkBoxPhone'])){
+            
+            $firstName=htmlspecialchars($_POST['firstName']);
+            $lastName=htmlspecialchars($_POST['lastName']);
+            $departements=htmlspecialchars($_POST['departements']);
+            $society=htmlspecialchars($_POST['society']);
+            $email=htmlspecialchars($_POST['email']);
+            $phone=htmlspecialchars($_POST['phone']);
+            $contactMail=0;
+            $contactPhone=htmlspecialchars($_POST['checkBoxPhone']);
+              $user = $bdd->prepare("INSERT INTO user(name, last_name, departement_id, company, email, phone, contact_mail, contact_phone) VALUES (?, ?, ?, ?, ?, ?, ?, ?) ");
+            
+            $user->bindParam('1', $firstName);
+            $user->bindParam('2', $lastName);
+            $user->bindParam('3', $departements);
+            $user->bindParam('4', $society);
+            $user->bindParam('5', $email);
+            $user->bindParam('6', $phone);
+            $user->bindParam('7', $contactMail);
+            $user->bindParam('8', $contactPhone);
+            $user->execute();
+            } else {
+           
+            $firstName=htmlspecialchars($_POST['firstName']);
+            $lastName=htmlspecialchars($_POST['lastName']);
+            $departements=htmlspecialchars($_POST['departements']);
+            $society=htmlspecialchars($_POST['society']);
+            $email=htmlspecialchars($_POST['email']);
+            $phone=htmlspecialchars($_POST['phone']);
+            $contactMail=0;
+            $contactPhone=0;
+              $user = $bdd->prepare("INSERT INTO user(name, last_name, departement_id, company, email, phone, contact_mail, contact_phone) VALUES (?, ?, ?, ?, ?, ?, ?, ?) ");
+            
+            $user->bindParam('1', $firstName);
+            $user->bindParam('2', $lastName);
+            $user->bindParam('3', $departements);
+            $user->bindParam('4', $society);
+            $user->bindParam('5', $email);
+            $user->bindParam('6', $phone);
+            $user->bindParam('7', $contactMail);
+            $user->bindParam('8', $contactPhone);
+            $user->execute();
+        }
+            
+        
         /* Ajout en bdd de l'article, sa catégorie et recup de l'id user au dessus  partie 3 & 4 */
             $userIDbdd = $bdd->prepare("SELECT user_id FROM user WHERE phone=?");
             $userIDbdd->bindParam('1', $phone);
