@@ -62,6 +62,7 @@
             !empty($_POST['email']) && 
             !empty($_POST['phone']) && 
             !empty($_POST['checkBoxMail']) &&
+            !empty($_POST['checkBoxPhone'])){
 
             $firstName=htmlspecialchars($_POST['firstName']);
             $lastName=htmlspecialchars($_POST['lastName']);
