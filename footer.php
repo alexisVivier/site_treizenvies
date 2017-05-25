@@ -1,22 +1,10 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-    <link rel="icon" type="image/png" href="img/logo.PNG" /> </head>
-
-<body>
-    <footer>
-        <link href="css/footer.css" rel="stylesheet">
-            <div id="footer_bar"> 
-                <a class="ftr_bouton" href="#">Contact</a> 
-                <div class="line_space"></div>
-                <a class="ftr_bouton" href="#">Plan du site</a>
-                <div class="line_space"></div>
-                <a class="ftr_bouton" href="#">Mentions légales</a>
-            </div>
-    </footer>
-</body>
-
-</html>
+<footer>
+    <link href="css/footer.css" rel="stylesheet">
+        <div id="footer_bar"> 
+            <a class="ftr_bouton" href="#">Contact</a> 
+            <div class="line_space"></div>
+            <a class="ftr_bouton" href="#">Plan du site</a>
+            <div class="line_space"></div>
+            <a class="ftr_bouton" href="#">Mentions légales</a>
+        </div>
+</footer>
