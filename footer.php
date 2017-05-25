@@ -8,7 +8,7 @@
 
 <body>
     <footer>
-        <link href="../css/footer.css" rel="stylesheet">
+        <link href="css/footer.css" rel="stylesheet">
             <div id="footer_bar"> 
                 <a class="ftr_bouton" href="#">Contact</a> 
                 <div class="line_space"></div>

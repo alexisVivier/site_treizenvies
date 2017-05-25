@@ -13,7 +13,7 @@
     <body>
 
         <header>
-            <link href="../css/header.css" rel="stylesheet">
+            <link href="css/header.css" rel="stylesheet">
             <div id="header">
                 <logo id="icon_13envie">
                     <svg version="1.1" id="Calque_2" width="120px" height="120px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 841.89 595.28" enable-background="new 0 0 841.89 595.28" xml:space="preserve">
@@ -76,7 +76,7 @@
             
             <div id="articleImageContainerLeft">
                 <div id="articleImageContainerLeftImage">
-                    <img src="../images/lolo.jpg">
+                    <img src="images/lolo.jpg">
                 </div>
                 <div id="articleImageContainerLeftPrerequisites">
                     <p>Prérequis :</p>

@@ -5,13 +5,15 @@
     <meta charset="utf-8" />
     <title></title>
     <link rel="icon" type="image/png" href="img/logo.PNG" /> </head>
-
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
 <body>
     <header>
-        <link href="../css/header.css" rel="stylesheet">
+        
         <div id="header">
             <logo id="icon_13envie">
-                <svg version="1.1" id="logo_13envie" width="100px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 841.89 595.28" enable-background="new 0 0 841.89 595.28" xml:space="preserve">
+                <svg version="1.1" id="Calque_2" width="120px" height="120px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 841.89 595.28" enable-background="new 0 0 841.89 595.28" xml:space="preserve">
                     <rect x="65" y="164.61" width="37" height="261" />
                     <path d="M332.67,178.61v40c0,0-23.67-18.33-54.67-18.33s-43,22.67-43,39.33s7.67,44.33,53.33,44.33v33.33
 	c0,0-50.67-1.67-50.67,38.33s38.67,40,46.17,40s23.83-2.67,41.83-12.67v35.33c0,0-19.33,11-46.33,11S201,418.95,201,359.95
@@ -51,6 +53,36 @@
             </div>
         </div>
     </header>
+    
+    
+    
+    
+    
+    
+    <div id="home_container">
+        <div id="background_image"></div>
+        <img id="logo_center" src="images/13envies_logo.png"/>
+        <div id="home_container_button">
+            <a id="home_button_left" href="#">Déposer un article</a>
+            <a id="home_button_right" href="#">Voir tous les articles</a>
+        </div>
+    </div>
+    
+    
+    
+    
+ 
+    
+    <footer>
+        
+            <div id="footer_bar"> 
+                <a class="ftr_bouton" href="#">Contact</a> 
+                <div class="line_space"></div>
+                <a class="ftr_bouton" href="#">Plan du site</a>
+                <div class="line_space"></div>
+                <a class="ftr_bouton" href="#">Mentions légales</a>
+            </div>
+    </footer>
 </body>
 
 </html>

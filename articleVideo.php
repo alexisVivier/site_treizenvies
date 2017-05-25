@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Article vidéo</title>
-        <link href="../css/styleVideo.css" rel="stylesheet">
+        <link href="css/styleVideo.css" rel="stylesheet">
     </head>
 
     <body>
